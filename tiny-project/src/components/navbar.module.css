@@ -1,0 +1,13 @@
+.nlink {
+    padding: 1rem;
+}
+.navbar {
+    display: flex;
+    padding: 2rem;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: burlywood;
+    width: 50%;
+}
