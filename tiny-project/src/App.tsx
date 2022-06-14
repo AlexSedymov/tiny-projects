@@ -3,8 +3,9 @@ import './App.css';
 import Navbar from "./components/navbar";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import About from "./routes/about";
-// import Wood from "./routes/wood";
 import WoodApi from "./routes/wood-api"
+import WoodApiDetail from "./components/wood-api-detail";
+import ErrorPage from "./components/error-page";
 
 function App() {
   return (
@@ -13,12 +14,11 @@ function App() {
           <BrowserRouter>
               <Navbar></Navbar>
               <Routes>
-                  <Route path="/about" element={<About />}>
-                  </Route>
-                  {/*<Route path="/hooks" element={<Wood />}>*/}
-                  {/*</Route>*/}
-                  <Route path="/wood-api" element={<WoodApi />}>
-                  </Route>
+                  <Route path="/"/>
+                  <Route path="/about" element={<About />}/>
+                  <Route path="/wood-api" element={<WoodApi />}/>
+                  <Route path={"/wood-api/:id"} element={<WoodApiDetail/>}/>
+                  <Route path={"*"} element={<ErrorPage/>}></Route>
               </Routes>
           </BrowserRouter>
       </header>

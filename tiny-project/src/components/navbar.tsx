@@ -11,14 +11,6 @@ const Navbar = () => {
                 >
                     Home
                 </NavLink>
-
-                <NavLink
-                    to="/hooks"
-                    className={styles.nlink}
-                >
-                    Hooks
-                </NavLink>
-
                 <NavLink
                     to="/about"
                     className={styles.nlink}
