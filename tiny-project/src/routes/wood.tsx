@@ -1,21 +1,21 @@
-import WoodList, {WoodSpecies} from "../components/wood-list";
+import WoodList, {WoodSpecies} from '../components/wood-list';
 
 const data: WoodSpecies = {
-    "Alder": {
-        "de":"Erle",
-        "rus":"Bla-bla",
+    'Alder': {
+        'de':'Erle',
+        'rus':'Bla-bla',
     },
-    "Ash": {
-        "de":"Asche"
+    'Ash': {
+        'de':'Asche'
     },
-    "Basswood": {
-        "de":"Linde"
+    'Basswood': {
+        'de':'Linde'
     },
-    "Beech": {
-        "de":"Buche"
+    'Beech': {
+        'de':'Buche'
     },
-    "Oak": {
-        "de":"Eiche"
+    'Oak': {
+        'de':'Eiche'
     }
 }
 

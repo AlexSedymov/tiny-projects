@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 import styles from './navbar.module.css'
 
 const Navbar = () => {
@@ -6,19 +6,19 @@ const Navbar = () => {
         <nav>
             <div className={styles.navbar}>
                 <NavLink
-                    to="/"
+                    to='/'
                     className={styles.nlink}
                 >
                     Home
                 </NavLink>
                 <NavLink
-                    to="/about"
+                    to='/about'
                     className={styles.nlink}
                 >
                     About
                 </NavLink>
                 <NavLink
-                    to="/wood-api"
+                    to='/wood-api'
                     className={styles.nlink}
                 >
                     Wood Api

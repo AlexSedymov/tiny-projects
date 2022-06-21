@@ -1,21 +1,21 @@
 import { useParams } from 'react-router-dom';
-import {useEffect, useState} from "react";
-import api from "../api/api";
+import {useEffect, useState} from 'react';
+import api from '../api/api';
 
 interface WoodDetail {
-    "name": string,
-    "description": string,
-    "id": number,
-    "image": string,
-    "location": string,
-    "slug": string,
-    "lat": number,
-    "long": number,
-    "url": string
+    'name': string,
+    'description': string,
+    'id': number,
+    'image': string,
+    'location': string,
+    'slug': string,
+    'lat': number,
+    'long': number,
+    'url': string
 }
 
 export default function WoodApiDetail() {
-    const url = "https://tree-nation.com/api/projects"
+    const url = 'https://tree-nation.com/api/projects'
     let { id } = useParams();
 
     useEffect(() => {
@@ -23,15 +23,15 @@ export default function WoodApiDetail() {
     },[])
 
     const [data, setData] = useState<WoodDetail>({
-        description: "",
+        description: '',
         id: 0,
-        image: "",
+        image: '',
         lat: 0,
-        location: "",
+        location: '',
         long: 0,
-        name: "",
-        slug: "",
-        url: ""
+        name: '',
+        slug: '',
+        url: ''
     })
 
     async function getData(){
@@ -41,7 +41,7 @@ export default function WoodApiDetail() {
 
     return <div>
         <h2>{data.name}</h2>
-        <p style={{maxWidth: "1200px", minWidth: "300px" }}>{data.description}</p>
+        <p style={{maxWidth: '1200px', minWidth: '300px' }}>{data.description}</p>
         <img style={{maxHeight: "500px"}} src={data.image} alt={`Image of the ${data.name}`}/><br/>
         <a href={`${data.url}`}>Visit project page on the tree-nation.com</a>
     </div>;

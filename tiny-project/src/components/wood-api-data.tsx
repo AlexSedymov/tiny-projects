@@ -1,21 +1,21 @@
 import api from '../api/api'
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useState} from 'react';
 import styles from './wood-api-data.module.css'
-import {Link} from "react-router-dom";
+import {Link} from 'react-router-dom';
 
 interface Props {
     url: string
 }
 
 interface WoodData {
-    "name": string,
-    "description": string,
-    "id": number,
-    "location": string,
-    "slug": string,
-    "lat": number,
-    "long": number,
-    "url": string
+    'name': string,
+    'description': string,
+    'id': number,
+    'location': string,
+    'slug': string,
+    'lat': number,
+    'long': number,
+    'url': string
 }
 
 export default function WoodApiData({url}: Props) {
