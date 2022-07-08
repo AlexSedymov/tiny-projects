@@ -35,10 +35,10 @@ export default function WoodApiData() {
 
     return <div className={styles.mainWrapper}>
             {
-                data.map((WoodData) =>
-                    <li className={styles.list} key={WoodData.id}>
-                        <b>{WoodData.name} ({WoodData.location}):</b> {cutSentence(WoodData.description)} ...
-                        <Link to={`/wood-api/${WoodData.id}`}> read more</Link>
+                data.map((woodData) =>
+                    <li className={styles.list} key={woodData.id}>
+                        <b>{woodData.name} ({woodData.location}):</b> {cutSentence(woodData.description)} ...
+                        <Link to={`/wood-api/${woodData.id}`}> read more</Link>
                     </li>
                 )
             }

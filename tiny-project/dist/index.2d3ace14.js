@@ -26795,14 +26795,14 @@ function WoodApiData() {
     }
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: (0, _woodApiDataModuleCssDefault.default).mainWrapper,
-        children: data1.map((WoodData)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+        children: data1.map((woodData)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                 className: (0, _woodApiDataModuleCssDefault.default).list,
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
                         children: [
-                            WoodData.name,
+                            woodData.name,
                             " (",
-                            WoodData.location,
+                            woodData.location,
                             "):"
                         ]
                     }, void 0, true, {
@@ -26811,10 +26811,10 @@ function WoodApiData() {
                         columnNumber: 25
                     }, this),
                     " ",
-                    cutSentence(WoodData.description),
+                    cutSentence(woodData.description),
                     " ...",
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: `/wood-api/${WoodData.id}`,
+                        to: `/wood-api/${woodData.id}`,
                         children: " read more"
                     }, void 0, false, {
                         fileName: "src/components/wood-api-data.tsx",
@@ -26822,7 +26822,7 @@ function WoodApiData() {
                         columnNumber: 25
                     }, this)
                 ]
-            }, WoodData.id, true, {
+            }, woodData.id, true, {
                 fileName: "src/components/wood-api-data.tsx",
                 lineNumber: 39,
                 columnNumber: 21
